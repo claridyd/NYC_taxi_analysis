@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>NYC Taxi Project</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#Machine Learning" class="w3-bar-item w3-button">Maching Learning</a>
       <a href="#graphs" class="w3-bar-item w3-button">Graphs</a>
       <a href="#conclusion" class="w3-bar-item w3-button">Conclusion</a>
       <a href="#credits" class="w3-bar-item w3-button">Credits</a>
@@ -28,12 +29,25 @@ h1, h2, h3, h4, h5, h6 {
 </div>
 
 <!-- Header -->
-<!-- <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="/templates/apple_car.jpg" alt="Apple Autonomous Car" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">I AM HERE!</h1>
-  </div>
-</header> -->
+<!-- icon -->
+<link rel="icon" type="/image/png" sizes="32x32" href="/favicon-32x32.png">
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="../templates/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest"> -->
+
+<header>
+<div class='w3-row'>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="taxi2.jpg" class="w3-round w3-image w3-opacity" alt="taxi" style="width:100%">
+      </div>
+
+     <div class="w3-col l6 w3-padding-large">
+       <img src= "apple-car-concept.jpg" class="w3-round w3-image w3-opacity">
+     </div>
+</div>
+    </div>
+    </div>
+    
+</header>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px">
@@ -43,48 +57,75 @@ h1, h2, h3, h4, h5, h6 {
   <!-- About Section -->
   <div class="w3-row w3-padding-64" id="about">
       <h1 class="w3-center">About</h1>
-    <div class="w3-col m12 w3-padding-large w3-hide-small">
-     <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="PUT PHOTO HERE?" width="600" height="750">
-     <h3 class="w3-center">Proposal:</h3>
-      <p class="w3-large">We have been approached to study the feasibility of deploying self-driving cars to compete with
-      yellow taxis in NYC.  The thought is that self-driving cars will be more profitable since there will
-      be no need to pay a driver or tip the driver.  We will study NYC yellow taxi traffic patterns;
-      specifically, we will look at the drop-off and pick up locations in order to predict where to deploy
-      the self-driving cars as well as the time of the drop-off and pick ups.</p>
-    </div>
 
+<!-- info -->
+     <h3 class="w3-center">Proposal:</h3>
+      <p class="w3-large">We have been approached to study the feasibility of deploying self-driving cars to compete with yellow taxis in NYC.  The thought is that self-driving cars will be more profitable since there will be no need to pay a driver or tip the driver.  We will study NYC yellow taxi traffic patterns; specifically, we will look at the drop-off and pick up locations in order to predict where to deploy the self-driving cars.</p>
+    </div>
+<!-- more info -->
     <div class="w3-col m12 w3-padding-large">
       <h3 class="w3-center">Prediction:</h3>
       <h5 class="w3-center">Question(s) and Hypothesis</h5>
-      <p class="w3-large">What drop-off and pick-up locations/zones will be the best to
-        deploy our self-driving cars? During the workweek, what times of day would be most profitable? During the weekend, what times of would be most profitable?
-       <br>Self-driving cars should be deployed between the NYC airports both LGA and JKF; and
-        Manhattan.</br> 
+      <p class="w3-large">Questions: What are the most profitable zones to deploy our vehicles and at what time of day?
+          What drop-off and pick-up locations/zones have the most taxi traffic? 
+       <br><br>Hypothesis: If Monday-Friday has high zone locations over the course of 10 years then we can predict when and where to send our cars so that it is most profitable. 
       </p>
+<!-- more info -->
+      <div class="w3-col m12 w3-padding-large">
+          <h3 class="w3-center">ETL:</h3>
+      <p class="w3-large"> Data was sourced from Google’s public BigQuery data set for New York Taxi. The original data set from 2015 was over 146 million entries. Source data was reduced to slightly over 11.5 million from July 2015 only and then explored and cleaned. Considerations for cleaning included rides paid by credit card for standard, JFK, and Newark fares only. These were cleaned for longitude/latitudes within the region, rides between one-half mile and 250 miles, rides between 2 and 180 minutes in length, and fares between $1 and $250. This dropped the data set down to 6.75 million rides with limited outliers and no null points. Data could be manipulated in a multitude of additional ways to continue to shrink the data set as needed.
+        </p>
+        <img src="datafram.png" style="width: 100%">
     </div>
   </div>
   
   <hr>
   
+ <!-- Machine Learning -->
+ <div class="w3-row w3-padding-64" id="Machine Learning">
+
+ <div class="w3-container w3-padding-64" id="graphs">
+    <h1 class="w3-center"id="graphs">Machine Learning</h1><br>
+    <h3 class="w3-center">Linear Regressions</h3> 
+  
+<!-- ADD IN GRAPHS HERE! -->
+<div class='w3-row'>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="scatter_linear.png" class="w3-round w3-image w3-opacity" alt="denise LR" style="width:100%">
+      <p class="w3-text-grey">Explations:</p><br></div>
+
+     <div class="w3-col l6 w3-padding-large">
+       <img src= "scatter_matrix.png" class="w3-round w3-image w3-opacity" alt="denise LR2" style="width:100%">
+       <p class="w3-text-grey">Explations:</p>
+     </div>
+</div>
+    </div>
+    </div>
+  </div>
+
+
+
   <!-- Graph Section -->
   <div class="w3-container w3-padding-64" id="graphs">
     <h1 class="w3-center"id="graphs">Graphs</h1><br>
     <h3 class="w3-center">Firefly Map:</h3> 
-    <a href="kepler.gl.html">City Map</a>
-      <!-- <h4>Taxi info</h4> -->
-      
-      
-      <p class="w3-text-grey">Stuff for taxi info</p><br>
-    </div>
+  
+<!-- ADD IN GRAPHS HERE! -->
+<div class='w3-row'>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="moving_map.gif" class="w3-round w3-image w3-opacity" alt="michaels graph" style="width:100%">
+      <br></div>
 
-    <!-- ADD IN GRAPHS HERE! -->
-    <!-- <div class="w3-col l6 w3-padding-large">
-      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="grahps" style="width:100%">
+     <div class="w3-col l6 w3-padding-large">
+       <img src= "map.png" class="w3-round w3-image w3-opacity">
+     </div>
+</div>
     </div>
-  </div> -->
+    </div>
+  </div>
 
   <hr>
-  <!-- Conclusion Section -->
+<!-- Conclusion Section -->
   <div class="w3-container w3-padding-64" id="conclusion">
       <h1 class="w3-center"id="conclusion">Conclusion</h1><br>
       <h3 class="w3-center">Limitations:</h3> 
@@ -93,16 +134,6 @@ h1, h2, h3, h4, h5, h6 {
       <p>What we found goes here</p>
 
     <!-- <p class="w3-text-blue-grey w3-large"><b>DO I NEED THIS?</b></p> -->
-<!-- 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
-    </form> -->
-  </div>
-</div>
 
 <!-- Credits Section -->
 <!-- Footer -->
