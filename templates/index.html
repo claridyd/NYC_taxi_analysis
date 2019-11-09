@@ -29,18 +29,18 @@ h1, h2, h3, h4, h5, h6 {
 </div>
 
 <head>
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32x32.png">
 </head>
 
 <!-- Header -->
 <header>
 <div class='w3-row'>
     <div class="w3-col l6 w3-padding-large">
-      <img src="taxi2.jpg" class="w3-round w3-image" alt="taxi" style="width:100%">
+      <img src="../static/img/taxi2.jpg" class="w3-round w3-image" alt="taxi" style="width:100%">
       </div>
 
      <div class="w3-col l6 w3-padding-large">
-       <img src= "apple-car-concept.jpg" class="w3-round w3-image">
+       <img src= "../static/img/apple-car-concept.jpg" class="w3-round w3-image">
      </div>
 </div>
     </div>
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
           <h3 class="w3-center">ETL:</h3>
       <p class="w3-large"> Data was sourced from Google’s public BigQuery data set for New York Taxi. The original data set from 2015 was over 146 million entries. Source data was reduced to slightly over 11.5 million from July 2015 only and then explored and cleaned. Considerations for cleaning included rides paid by credit card for standard, JFK, and Newark fares only. These were cleaned for longitude/latitudes within the region, rides between one-half mile and 250 miles, rides between 2 and 180 minutes in length, and fares between $1 and $250. This dropped the data set down to 6.75 million rides with limited outliers and no null points. Data could be manipulated in a multitude of additional ways to continue to shrink the data set as needed.
         </p>
-        <img src="datafram.png" style="width: 100%">
+        <img src="../static/img/datafram.png" style="width: 100%">
     </div>
   </div>
   
@@ -90,12 +90,13 @@ h1, h2, h3, h4, h5, h6 {
 <!-- ADD IN GRAPHS HERE! -->
 <div class='w3-row'>
     <div class="w3-col l6 w3-padding-large">
-      <img src="scatter_linear.png" class="w3-round w3-image" alt="denise LR" style="width:100%">
-      <p class="w3-text-grey">Explations:</p><br></div>
+      <img src="../static/img/scatter_linear.png" class="w3-round w3-image" alt="denise LR" style="width:100%">
+      <!-- <p class="w3-text-grey">Explations:</p> -->
+      <br></div>
 
      <div class="w3-col l6 w3-padding-large">
-       <img src= "scatter_matrix.png" class="w3-round w3-image" alt="denise LR2" style="width:100%">
-       <p class="w3-text-grey">Explations:</p>
+       <img src= "../static/img/scatter_matrix.png" class="w3-round w3-image" alt="denise LR2" style="width:100%">
+       <!-- <p class="w3-text-grey">Explations:</p> -->
      </div>
 </div>
     </div>
@@ -112,11 +113,11 @@ h1, h2, h3, h4, h5, h6 {
 <!-- ADD IN GRAPHS HERE! -->
 <div class='w3-row'>
     <div class="w3-col l6 w3-padding-large">
-      <img src="moving_map.gif" class="w3-round w3-image" alt="michaels graph" style="width:100%">
+      <img src="../static/img/moving_map.gif" class="w3-round w3-image" alt="michaels graph" style="width:100%">
       <br></div>
 
      <div class="w3-col l6 w3-padding-large">
-       <img src= "map.png" class="w3-round w3-image">
+       <img src= "../static/img/map.png" class="w3-round w3-image">
      </div>
 </div>
     </div>
@@ -124,13 +125,15 @@ h1, h2, h3, h4, h5, h6 {
   </div>
 
   <hr>
-<!-- Conclusion Section -->
+  
+<!-- Conclusion Section --><div class="w3-col m12 w3-padding-large"></div>
   <div class="w3-container w3-padding-64" id="conclusion">
       <h1 class="w3-center"id="conclusion">Conclusion</h1><br>
+
       <h3 class="w3-center">Limitations:</h3> 
-      <p>Some of our limitations include: memory, learning Google BigQuery on the fly, learning the Google Cloud environment, and working with a big data set. </p>
+      <p class="w3-large">Some of our limitations include: memory, learning Google BigQuery on the fly, learning the Google Cloud environment, and working with a big data set. </p>
       <h3 class="w3-center">Findings:</h3>
-      <p>Conclusion: As expected fare_amounts are correlated with trip_distance. Our predicted output is $10.66.  We used three models namely; linear regression, LASSO and RandomForest.  All models produced very similar results.  Based on our set our models did well with MSE of 8.819 and r2 of .894 for both the linear regression and Lasso models.  The RandomForest model gave use MSE of 8.69 and r2 of .896.</p>
+      <p class="w3-large">As expected fare_amounts are correlated with trip_distance. Our predicted output is $10.66.  We used three models namely; linear regression, LASSO and RandomForest.  All models produced very similar results.  Based on our set our models did well with MSE of 8.819 and r2 of .894 for both the linear regression and Lasso models.  The RandomForest model gave use MSE of 8.69 and r2 of .896.</p>
 
     <!-- <p class="w3-text-blue-grey w3-large"><b>DO I NEED THIS?</b></p> -->
 
