@@ -28,20 +28,19 @@ h1, h2, h3, h4, h5, h6 {
   </div>
 </div>
 
-<!-- Header -->
-<!-- icon -->
-<link rel="icon" type="/image/png" sizes="32x32" href="/favicon-32x32.png">
-<!-- <link rel="icon" type="image/png" sizes="16x16" href="../templates/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest"> -->
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+</head>
 
+<!-- Header -->
 <header>
 <div class='w3-row'>
     <div class="w3-col l6 w3-padding-large">
-      <img src="taxi2.jpg" class="w3-round w3-image w3-opacity" alt="taxi" style="width:100%">
+      <img src="taxi2.jpg" class="w3-round w3-image" alt="taxi" style="width:100%">
       </div>
 
      <div class="w3-col l6 w3-padding-large">
-       <img src= "apple-car-concept.jpg" class="w3-round w3-image w3-opacity">
+       <img src= "apple-car-concept.jpg" class="w3-round w3-image">
      </div>
 </div>
     </div>
@@ -58,11 +57,11 @@ h1, h2, h3, h4, h5, h6 {
   <div class="w3-row w3-padding-64" id="about">
       <h1 class="w3-center">About</h1>
 
-<!-- info -->
+<!-- PROPOSAL -->
      <h3 class="w3-center">Proposal:</h3>
       <p class="w3-large">We have been approached to study the feasibility of deploying self-driving cars to compete with yellow taxis in NYC.  The thought is that self-driving cars will be more profitable since there will be no need to pay a driver or tip the driver.  We will study NYC yellow taxi traffic patterns; specifically, we will look at the drop-off and pick up locations in order to predict where to deploy the self-driving cars.</p>
     </div>
-<!-- more info -->
+<!-- PREDICTION-->
     <div class="w3-col m12 w3-padding-large">
       <h3 class="w3-center">Prediction:</h3>
       <h5 class="w3-center">Question(s) and Hypothesis</h5>
@@ -70,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
           What drop-off and pick-up locations/zones have the most taxi traffic? 
        <br><br>Hypothesis: If Monday-Friday has high zone locations over the course of 10 years then we can predict when and where to send our cars so that it is most profitable. 
       </p>
-<!-- more info -->
+<!-- ETL -->
       <div class="w3-col m12 w3-padding-large">
           <h3 class="w3-center">ETL:</h3>
       <p class="w3-large"> Data was sourced from Google’s public BigQuery data set for New York Taxi. The original data set from 2015 was over 146 million entries. Source data was reduced to slightly over 11.5 million from July 2015 only and then explored and cleaned. Considerations for cleaning included rides paid by credit card for standard, JFK, and Newark fares only. These were cleaned for longitude/latitudes within the region, rides between one-half mile and 250 miles, rides between 2 and 180 minutes in length, and fares between $1 and $250. This dropped the data set down to 6.75 million rides with limited outliers and no null points. Data could be manipulated in a multitude of additional ways to continue to shrink the data set as needed.
@@ -91,11 +90,11 @@ h1, h2, h3, h4, h5, h6 {
 <!-- ADD IN GRAPHS HERE! -->
 <div class='w3-row'>
     <div class="w3-col l6 w3-padding-large">
-      <img src="scatter_linear.png" class="w3-round w3-image w3-opacity" alt="denise LR" style="width:100%">
+      <img src="scatter_linear.png" class="w3-round w3-image" alt="denise LR" style="width:100%">
       <p class="w3-text-grey">Explations:</p><br></div>
 
      <div class="w3-col l6 w3-padding-large">
-       <img src= "scatter_matrix.png" class="w3-round w3-image w3-opacity" alt="denise LR2" style="width:100%">
+       <img src= "scatter_matrix.png" class="w3-round w3-image" alt="denise LR2" style="width:100%">
        <p class="w3-text-grey">Explations:</p>
      </div>
 </div>
@@ -113,11 +112,11 @@ h1, h2, h3, h4, h5, h6 {
 <!-- ADD IN GRAPHS HERE! -->
 <div class='w3-row'>
     <div class="w3-col l6 w3-padding-large">
-      <img src="moving_map.gif" class="w3-round w3-image w3-opacity" alt="michaels graph" style="width:100%">
+      <img src="moving_map.gif" class="w3-round w3-image" alt="michaels graph" style="width:100%">
       <br></div>
 
      <div class="w3-col l6 w3-padding-large">
-       <img src= "map.png" class="w3-round w3-image w3-opacity">
+       <img src= "map.png" class="w3-round w3-image">
      </div>
 </div>
     </div>
