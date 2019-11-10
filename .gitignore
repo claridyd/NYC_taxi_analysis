@@ -104,3 +104,9 @@ venv.bak/
 .mypy_cache/
 # config
 *config*.*
+
+node_modules
+
+raw_data
+
+yellow_tripdata_2015-07.csv

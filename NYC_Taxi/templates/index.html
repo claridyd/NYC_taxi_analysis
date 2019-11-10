@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>NYC Taxi Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Taxi Project</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#Machine Learning" class="w3-bar-item w3-button">Maching Learning</a>
+      <a href="#graphs" class="w3-bar-item w3-button">Graphs</a>
+      <a href="#conclusion" class="w3-bar-item w3-button">Conclusion</a>
+      <a href="#credits" class="w3-bar-item w3-button">Credits</a>
+    </div>
+  </div>
+</div>
+
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32x32.png">
+</head>
+
+<!-- Header -->
+<header>
+<div class='w3-row'>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="../static/img/taxi2.jpg" class="w3-round w3-image" alt="taxi" style="width:100%">
+      </div>
+
+     <div class="w3-col l6 w3-padding-large">
+       <img src= "../static/img/apple-car-concept.jpg" class="w3-round w3-image">
+     </div>
+</div>
+    </div>
+    </div>
+    
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+<div>
+  
+</div>
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+      <h1 class="w3-center">About</h1>
+
+<!-- PROPOSAL -->
+     <h3 class="w3-center">Proposal:</h3>
+      <p class="w3-large">We have been approached to study the feasibility of deploying self-driving cars to compete with yellow taxis in NYC.  The thought is that self-driving cars will be more profitable since there will be no need to pay a driver or tip the driver.  We will study NYC yellow taxi traffic patterns; specifically, we will look at the drop-off and pick up locations in order to predict where to deploy the self-driving cars.</p>
+    </div>
+<!-- PREDICTION-->
+    <div class="w3-col m12 w3-padding-large">
+      <h3 class="w3-center">Prediction:</h3>
+      <h5 class="w3-center">Question(s) and Hypothesis</h5>
+      <p class="w3-large">Questions: What are the most profitable zones to deploy our vehicles and at what time of day?
+          What drop-off and pick-up locations/zones have the most taxi traffic? 
+       <br><br>Hypothesis: If Monday-Friday has high zone locations over the course of 10 years then we can predict when and where to send our cars so that it is most profitable. 
+      </p>
+<!-- ETL -->
+      <div class="w3-col m12 w3-padding-large">
+          <h3 class="w3-center">ETL:</h3>
+      <p class="w3-large"> Data was sourced from Google’s public BigQuery data set for New York Taxi. The original data set from 2015 was over 146 million entries. Source data was reduced to slightly over 11.5 million from July 2015 only and then explored and cleaned. Considerations for cleaning included rides paid by credit card for standard, JFK, and Newark fares only. These were cleaned for longitude/latitudes within the region, rides between one-half mile and 250 miles, rides between 2 and 180 minutes in length, and fares between $1 and $250. This dropped the data set down to 6.75 million rides with limited outliers and no null points. Data could be manipulated in a multitude of additional ways to continue to shrink the data set as needed.
+        </p>
+        <img src="../static/img/datafram.png" style="width: 100%">
+    </div>
+  </div>
+  
+  <hr>
+  
+ <!-- Machine Learning -->
+ <div class="w3-row w3-padding-64" id="Machine Learning">
+
+ <div class="w3-container w3-padding-64" id="graphs">
+    <h1 class="w3-center"id="graphs">Machine Learning</h1><br>
+    <h3 class="w3-center">Linear Regressions</h3> 
+  
+<!-- ADD IN GRAPHS HERE! -->
+<div class='w3-row'>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="../static/img/scatter_linear.png" class="w3-round w3-image" alt="denise LR" style="width:100%">
+      <!-- <p class="w3-text-grey">Explations:</p> -->
+      <br></div>
+
+     <div class="w3-col l6 w3-padding-large">
+       <img src= "../static/img/scatter_matrix.png" class="w3-round w3-image" alt="denise LR2" style="width:100%">
+       <!-- <p class="w3-text-grey">Explations:</p> -->
+     </div>
+</div>
+    </div>
+    </div>
+  </div>
+
+
+
+  <!-- Graph Section -->
+  <div class="w3-container w3-padding-64" id="graphs">
+    <h1 class="w3-center"id="graphs">Graphs</h1><br>
+    <h3 class="w3-center">Firefly Map:</h3> 
+  
+<!-- ADD IN GRAPHS HERE! -->
+<div class='w3-row'>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="../static/img/moving_map.gif" class="w3-round w3-image" alt="michaels graph" style="width:100%">
+      <br></div>
+
+     <div class="w3-col l6 w3-padding-large">
+       <img src= "../static/img/map.png" class="w3-round w3-image">
+     </div>
+</div>
+    </div>
+    </div>
+  </div>
+
+  <hr>
+  
+<!-- Conclusion Section --><div class="w3-col m12 w3-padding-large"></div>
+  <div class="w3-container w3-padding-64" id="conclusion">
+      <h1 class="w3-center"id="conclusion">Conclusion</h1><br>
+
+      <h3 class="w3-center">Limitations:</h3> 
+      <p class="w3-large">Some of our limitations include: memory, learning Google BigQuery on the fly, learning the Google Cloud environment, and working with a big data set. </p>
+      <h3 class="w3-center">Findings:</h3>
+      <p class="w3-large">As expected fare_amounts are correlated with trip_distance. Our predicted output is $10.66.  We used three models namely; linear regression, LASSO and RandomForest.  All models produced very similar results.  Based on our set our models did well with MSE of 8.819 and r2 of .894 for both the linear regression and Lasso models.  The RandomForest model gave use MSE of 8.69 and r2 of .896.</p>
+
+    <!-- <p class="w3-text-blue-grey w3-large"><b>DO I NEED THIS?</b></p> -->
+
+<!-- Credits Section -->
+<!-- Footer -->
+<h1 class="w3-center"id="credits">Credits</h1>
+<p>TLC Yellow Taxi dataset from Google BigQuery<br>
+  GitHub: <a href="https://github.com/claridyd/NYC_taxi_analysis">https://github.com/claridyd/NYC_taxi_analysis</a> </p>
+  <br>
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
